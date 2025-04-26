@@ -7,7 +7,7 @@ app = FastAPI(title="Travel Assistant API", docs_url="/docs")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Update for production
+    allow_origins=["https://travel-assistant-frontend.onrender.com","http://localhost:3000"],  # Update for production
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
